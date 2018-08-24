@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Count3FX">
+    <output-path>$PROJECT_DIR$/out/artifacts/Count3FX</output-path>
+    <root id="root">
+      <element id="archive" name="Count3FX.jar">
+        <element id="module-output" name="Count3FX" />
+      </element>
+    </root>
+  </artifact>
+</component>

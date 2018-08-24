@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <TextArea editable="false" prefHeight="300.0" prefWidth="500.0" promptText=" " scaleX="1.05" scaleY="1.2" text="The Count vIII 16.0623(dev)&#10;The Count is a software package for the evolutionary analysis of phylogenetic profiles, and numerical characters in general, written entirely in Java.&#10;Author: Miklós Csűrös http://www.iro.umontreal.ca/~csuros/&#10;Some numerical optimization routines were adapted from Numerical Recipes in C: The Art of Scientific Computing [W. H. Press, S. A. Teukolsky, W. V. Vetterling and B. P. Flannery; Second edition, Cambridge University Press, 1997].&#10;Some code for MacOS X integration is based on Eirik Bjorsnos' Java package org.simplericity.macify.eawt, distributed under the terms of the Apache License http://www.apache.org/licenses/LICENSE-2.0&#10;The background image (Moon and Mars) of the Count logo (batty batty bat batty bat batty bat batty bat...)is used with permission from the copyright owner, John Harms.&#10;Please cite Count as Csűrös, M. (2010). &quot;Count: evolutionary analysis of phylogenetic profiles with parsimony and likelihood&quot;Bioinformatics, 26(15):1910-1912. doi:10.1093/bioinformatics/btq315&#10;Algorithmic ideas uderlying the Count package were described in the following publications.&#10;Csűrös, M. (2008). &quot;Ancestral reconstruction by asymmetric Wagner parsimony over continuous characters and squared parsimony over distributions.&quot; Springer Lecture Notes in Bioinformatics 5267:72-86. (Proceedings of RECOMB Satellite Workshop on Comparative Genomics.)&#10;Csűrös, M. &amp; I. Miklós (2006).&quot;A probabilistic model for gene content evolution with duplication, loss, and horizontal transfer.&quot; Springer Lecture Notes in Bioinformatics 3909:206-220. (Proceedings of RECOMB.)&#10;Csűrös, M. &amp; I. Miklós (2009a). &quot;Mathematical framework for phylogenetic birth-and-death models.&quot; Report q-bio.PE/0902.0970 at arXiv. http://arxiv.org/abs/0902.0970v1.&#10;Csűrös, M. &amp; I. Miklós (2009b). &quot;Streamlining and large ancestral genomes in Archaea inferred with a phylogenetic birth-and-death model.&quot; Molecular Biology and Evolution, 26: 2087--2095. DOI: 10.1093/molbev/msp123&#10;Montréal/Budapest/Ann Arbor/Hong Kong/Nha Trang/Bengaluru/Amsterdam/Szentendre/Szeged, 2010-2016" wrapText="true" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0">
+            <font>
+                <Font name="Arial Hebrew Bold" size="13.0" />
+            </font>
+        </TextArea>
+        <ImageView fitHeight="360.0" fitWidth="300.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="440.0">
+            <image>
+                <Image url="http://www.iro.umontreal.ca/~csuros/gene_content/images/count-icon.jpg" />
+            </image></ImageView>
+        <ButtonBar layoutX="5.0" layoutY="365.0" onMouseClicked="#handleCommand" prefHeight="30.0" prefWidth="200.0">
+            <buttons>
+                <Button mnemonicParsing="false" text="Start new session..." />
+            </buttons>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ButtonBar>
+
+        <ButtonBar layoutX="175.0" layoutY="365.0" prefHeight="30.0" prefWidth="300.0">
+            <buttons>
+                <Button mnemonicParsing="false" text="Open previously saved session..." />
+            </buttons>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ButtonBar>
+
+        <ButtonBar layoutX="440.0" layoutY="365.0" prefHeight="30.0" prefWidth="300.0">
+            <buttons>
+                <Button mnemonicParsing="false" text="Just closed the splash screen.." />
+            </buttons>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ButtonBar>
+    </children>
+    <effect>
+        <Blend />
+    </effect>
+</AnchorPane>
